@@ -1,0 +1,9 @@
+-r ./common.txt
+flake8==3.0.4
+Flask-DebugToolbar==0.10.1
+Flask-Debug-API==0.1.0
+mock==1.0.1
+pytest==3.2.1
+pytest-cov==2.5.1
+pytest-sugar==0.9.1
+responses==0.5.1

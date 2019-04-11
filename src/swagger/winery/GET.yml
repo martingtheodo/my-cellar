@@ -1,0 +1,14 @@
+Retrieve all wineries
+---
+tags:
+  - Winery
+responses:
+  200:
+    description: The wineries have been successfully retrieved
+    schema:
+      example:
+        - name: JB Adam
+          origin:
+            region: Alsace
+            country: France
+            id: 1

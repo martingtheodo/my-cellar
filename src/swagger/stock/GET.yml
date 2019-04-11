@@ -1,0 +1,41 @@
+Retrieve all stock
+---
+tags:
+  - Stock
+responses:
+  200:
+    description: The stock have been successfully retrieved
+    schema:
+      example:
+        - quantity: 1
+          bottle:
+            cuvee:
+              appellation:
+                name: Alsace Grand Cru
+              winery:
+                origin:
+                  country: France
+                  region: Alsace
+                name: JB Adam
+              colour: Blanc
+              name: Riesling Wineck-Schlossberg
+              grape_varieties:
+                - name: Riesling
+            vintage: 2014
+            type: classic
+        - quantity: 4
+          bottle:
+            cuvee:
+              appellation:
+                name: Alsace Grand Cru
+              winery:
+                origin:
+                  country: France
+                  region: Alsace
+                name: JB Adam
+              colour: Blanc
+              name: Riesling Wineck-Schlossberg
+              grape_varieties:
+                - name: Riesling
+              vintage: 2018
+              type: classic

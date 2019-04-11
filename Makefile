@@ -48,9 +48,6 @@ db/downgrade:
 	fi
 
 install: .env
-	cp scripts/pre-commit .git/hooks/pre-commit
-	pip install --user pipenv
-	PIPENV_VENV_IN_PROJECT=true pipenv install --dev
 	docker-compose run --rm server pip install -r requirements/dev.txt --user --upgrade --no-warn-script-location
 
 prettify:
@@ -68,3 +65,5 @@ sort_imports:
 
 sort_imports/check:
 	pipenv run isort -rc test/ src/ migrations/ --check-only
+import/fixtures:
+	docker-compose run --rm server python src/manage.py import/fixtures

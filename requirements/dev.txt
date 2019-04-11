@@ -1,4 +1,5 @@
 -r ./common.txt
+factory_boy==2.11.1
 flake8==3.0.4
 Flask-DebugToolbar==0.10.1
 Flask-Debug-API==0.1.0

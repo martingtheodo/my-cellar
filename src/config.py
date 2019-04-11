@@ -24,6 +24,7 @@ logging.basicConfig(
     format="%(levelname)s: %(asctime)s pid:%(process)s module:%(module)s %(message)s",
     datefmt="%d/%m/%y %H:%M:%S",
 )
+logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
 # Disable Flask-SQLAlchemy event system
 SQLALCHEMY_TRACK_MODIFICATIONS = False
